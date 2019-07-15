@@ -8,19 +8,23 @@ import org.springframework.beans.factory.InitializingBean;
 
 
         @Override
-        public void afterPropertiesSet() throws Exception {
+        public void afterPropertiesSet() throws Exception
+        {
             System.out.println("Inside afterPropertiesSet method");
         }
         @Override
-        public void destroy() throws Exception {
+        public void destroy() throws Exception
+        {
             System.out.println("Inside destroy method");
         }
 
-        public void customInit(){
+        public void customInit()
+        {
             System.out.println("Inside customInit method");
         }
 
-        public void customDestroy(){
+        public void customDestroy()
+        {
             System.out.println("Inside customDestroy method");
         }
     }

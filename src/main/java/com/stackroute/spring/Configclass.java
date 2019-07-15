@@ -15,14 +15,17 @@ public class Configclass {
         return new Movie(actorObj());
     }
 
+
+
     @Bean
     public Actor actorObj (){
-        return new Actor("sivakarthikeyan","male",30);
+        return new Actor("akhila","female",30);
     }
 
-    @Bean(initMethod = "customInit", destroyMethod = "destroy")
-    public BeanLifeCycleDemo beanlifecycle() {
-        return new BeanLifeCycleDemo();
+
+    @Bean
+    public BeanPostProcessorDemo beanPostProcessorDemo(){
+        return new BeanPostProcessorDemo();
     }
 
 }
