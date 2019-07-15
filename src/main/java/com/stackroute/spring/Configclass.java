@@ -12,23 +12,17 @@ public class Configclass {
 
     @Bean
     public Movie movieObj (){
-        return new Movie(actor());
-    }
-
-    @Bean
-    public Movie movieObj1 (){
         return new Movie(actorObj());
     }
 
     @Bean
     public Actor actorObj (){
-        return new Actor("bhanu","female",22);
+        return new Actor("sivakarthikeyan","male",30);
     }
 
-    @Bean
-    public Actor actor (){
-        return new Actor("sree","female",23);
+    @Bean(initMethod = "customInit", destroyMethod = "destroy")
+    public BeanLifeCycleDemo beanlifecycle() {
+        return new BeanLifeCycleDemo();
     }
 
 }
-
