@@ -10,22 +10,24 @@ public class Configclass {
 
 //	Movie Beans
 
-
     @Bean
     public Movie movieObj (){
-        return new Movie();
+        return new Movie(actor());
     }
 
-
+    @Bean
+    public Movie movieObj1 (){
+        return new Movie(actorObj());
+    }
 
     @Bean
     public Actor actorObj (){
-        return new Actor("bhanu","female",39);
+        return new Actor("bhanu","female",22);
     }
 
     @Bean
     public Actor actor (){
-        return new Actor("jaya","female",46);
+        return new Actor("sree","female",23);
     }
 
 }
