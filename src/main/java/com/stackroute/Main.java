@@ -9,14 +9,22 @@ public class Main {
     public static void main( String[] args )
     {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.stackroute.spring");
-        Movie movie1 = context.getBean("movieBean",Movie.class);
+
+        Movie movie1 = context.getBean("movieObj1",Movie.class);
         movie1.display();
 
-        BeanFactory factory = new AnnotationConfigApplicationContext("com.stackroute.spring");
-        Movie movie2 = factory.getBean("movieBean",Movie.class);
+        Movie movie2 = context.getBean("movieObj2",Movie.class);
         movie2.display();
 
+        Movie movie3 = context.getBean("movieObj3",Movie.class);
+        movie3.display();
 
+        Movie movie4 = context.getBean("movieObj3",Movie.class);
+
+        System.out.println(movie3 == movie4);
+
+        Movie movie5 = (Movie) context.getBean("movieObject");
+        movie5.display();
     }
 
 }
