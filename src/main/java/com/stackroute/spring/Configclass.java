@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Configclass {
 
-//	Movie Beans
+//	creating Bean objects
 
     @Bean
     public Movie movieObj (){
