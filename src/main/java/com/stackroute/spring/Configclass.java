@@ -14,10 +14,10 @@ public class Configclass {
     public Movie movieObj (){
         return new Movie(actorObj());
     }
-
+//actor beans
     @Bean
     public Actor actorObj (){
-        return new Actor("sivakarthikeyan","male",30);
+        return new Actor("akhila","female",30);
     }
 
     @Bean(initMethod = "customInit", destroyMethod = "destroy")
