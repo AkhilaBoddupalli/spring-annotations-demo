@@ -17,7 +17,7 @@ public class Configclass {
     }
 
 
-
+//actor beans
     @Bean
     public Actor actorObj (){
         return new Actor("bhanu","female",39);

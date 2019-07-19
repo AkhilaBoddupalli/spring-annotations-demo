@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
         }
 
         @Autowired
+        //injecting object dependency
         public void setActor(Actor actor) {
             this.actor = actor;
 
