@@ -8,6 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main( String[] args )
     {
+        //using application context
         ApplicationContext context = new AnnotationConfigApplicationContext("com.stackroute.spring");
 
         Movie movie1 = context.getBean("movieObj1",Movie.class);
@@ -20,6 +21,8 @@ public class Main {
         movie3.display();
 
         Movie movie4 = context.getBean("movieObj3",Movie.class);
+
+        //comparing two beans
 
         System.out.println(movie3 == movie4);
 

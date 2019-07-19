@@ -2,6 +2,8 @@ package com.stackroute.spring;
 
 public class Movie {
 
+    //actor object
+
     private Actor actor;
 
     public Movie() {
