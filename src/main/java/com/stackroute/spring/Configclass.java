@@ -19,7 +19,7 @@ public class Configclass {
     public Movie movieObj1 (){
         return new Movie(actorObj());
     }
-
+//actorbeans
     @Bean
     public Actor actorObj (){
         return new Actor("bhanu","female",22);

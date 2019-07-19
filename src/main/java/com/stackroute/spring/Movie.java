@@ -23,6 +23,7 @@ public class Movie implements ApplicationContextAware, BeanFactoryAware, BeanNam
         System.out.println("Actor Name: "+ actor.getName()+" Gender: "+ actor.getGender()+" Age: "+ actor.getAge() );
     }
 
+    //implmentation
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
         System.out.println("beanFactory");

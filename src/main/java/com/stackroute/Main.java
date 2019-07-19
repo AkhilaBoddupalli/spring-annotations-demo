@@ -9,6 +9,7 @@ public class Main
 {
     public static void main( String[] args )
     {
+        //using application context
         ApplicationContext context = new AnnotationConfigApplicationContext("com.stackroute.spring");
 
         Movie movie = context.getBean("movieObj",Movie.class);

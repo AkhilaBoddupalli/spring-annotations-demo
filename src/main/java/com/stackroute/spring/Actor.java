@@ -12,7 +12,7 @@ public class Actor {
         this.gender = gender;
         this.age = age;
     }
-
+    //getters
     public String getName() {
         return name;
     }
